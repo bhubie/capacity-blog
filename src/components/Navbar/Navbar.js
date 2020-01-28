@@ -1,15 +1,17 @@
 import React from 'react';
 
-function NavBar() {
+import { Navbar } from 'react-bulma-components';
+
+function NavigationBar() {
     return (
-        <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-                <a className="navbar-item" href="https://bulma.io">
+        <Navbar color="primary">
+            <Navbar.Brand>
+                <Navbar.Item>
                     Capacity Blog
-                </a>   
-            </div>
-        </nav>
+                </Navbar.Item>
+            </Navbar.Brand>
+        </Navbar>
     );
 }
 
-export default NavBar;
+export default NavigationBar;
