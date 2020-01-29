@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-
+import { Container } from 'react-bulma-components';
 import NavigationBar from './components/Navbar/Navbar';
+import BlogPostList from  './components/BlogPostList/BlogPostList';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <NavigationBar />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Container fluid>
+          <BlogPostList />
+        </Container>
+       
       </div>
     );
   }
