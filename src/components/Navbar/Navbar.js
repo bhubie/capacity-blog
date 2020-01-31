@@ -1,15 +1,25 @@
 import React from 'react';
-
-import { Navbar } from 'react-bulma-components';
+import { Navbar, Heading } from 'react-bulma-components';
+import useUser from '../../hooks/useUser';
 
 function NavigationBar() {
+
+    const { userID } = useUser();
+
     return (
         <Navbar color="primary">
             <Navbar.Brand>
                 <Navbar.Item>
-                    Capacity Blog
+                    <Heading size="5" textColor="white">
+                        Capacity Blog
+                    </Heading>
                 </Navbar.Item>
             </Navbar.Brand>
+            <Navbar.Container position="end">
+                <Navbar.Item>
+                    Welcome User {userID}
+                </Navbar.Item>
+            </Navbar.Container>
         </Navbar>
     );
 }
