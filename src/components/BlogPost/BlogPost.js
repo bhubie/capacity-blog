@@ -21,7 +21,7 @@ function BlogPost() {
 
     return (
         <div>
-            <div style={{display: 'flex', alignItems: 'center'}}>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                 <Heading>
                     {title}
                 </Heading>
