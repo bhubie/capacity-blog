@@ -31,6 +31,8 @@ function useAddBlog() {
         });
 
         setIsAddingPost(false);
+        setTitle('');
+        setBody('');
 
     });
 
