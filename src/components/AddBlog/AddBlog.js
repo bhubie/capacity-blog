@@ -37,7 +37,10 @@ function AddBlog({ show, close }) {
                         disabled={isSaveDisabled} 
                         color="success" 
                         loading={isAddingPost}
-                        onClick={() => addBlogPost()}>
+                        onClick={async () => {
+                            await addBlogPost();
+                            close();
+                        }}>
                         Save
                     </Button>
                 </Section>
