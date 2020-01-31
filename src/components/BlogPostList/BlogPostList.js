@@ -2,8 +2,6 @@ import React from 'react';
 import useBlogPosts from '../../hooks/useBlogPosts';
 import BlogPostSummary from '../BlogPostSummary/BlogPostSummary';
 
-
-
 function BlogPostList() {
 
     const { isLoading, blogPosts, error } = useBlogPosts();
@@ -18,7 +16,7 @@ function BlogPostList() {
 
     return (
         <React.Fragment>
-            {blogPosts.map(post => <BlogPostSummary title={post.title} body={post.body} userId={post.userId} id={post.id} />)}
+            {blogPosts.map(post => <BlogPostSummary title={post.title} body={post.body} userId={post.userId} id={post.id} key={post.id} />)}
         </React.Fragment>
     );
 
