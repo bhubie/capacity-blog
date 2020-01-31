@@ -21,9 +21,9 @@ Builds the app for production to the `build` folder.<br>
 
 ## Future Tests
 More tests I would include in the future would be:
-- validating scenarios on when the save button should be enabled/disabled in add blog based on required fields
-- spying that the api is called when save button is clicked
-- spying that the api is called for deleting when delete button is clicked
+- testing scenarios on when the save button should be enabled/disabled in add blog based on required fields
+- testing that the api is called when save button is clicked
+- testing that the api is called for deleting when delete button is clicked
 - testing loading state in necessary components
 - testing error state in necessary components
 - testing pop up is closed once blog is added
